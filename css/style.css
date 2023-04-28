@@ -1,0 +1,237 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff7f50;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ff4400;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: rgba(255, 255, 255, 0.893);
+}
+.colored {
+    color: #ff7f50;
+    font-weight: 600;
+}
+nav {
+    z-index: 10;
+}
+.hero {
+    min-height: 100vh;
+    background-image: url(../imgs/hero.jpg);
+    background-size: cover;
+}
+@media(max-width: 715px) {
+    .hero {
+        background-position: -250px;
+        
+    }
+}
+.hero .text {
+    margin-bottom: 100px;
+    max-width: 350px;
+}
+.navbar li a {
+    color: black;
+    font-size: 18px;
+}
+.btn-shape {
+    font-weight: bold;
+    color: white;
+    background-color: #1d1d1d;
+    padding: 15px 30px;
+    font-size: 20px;
+}
+.brand img {
+    height: 100px;
+}
+.offer {
+    background-image: url(../imgs/nickelodeon-logo-png-1269.png);
+    background-size: 350px 300px;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.offer img{
+    width: 100%;
+    height: 340px;
+    border: 2px solid rgba(0, 0, 0, 0.078);
+    position: relative;
+    z-index: -1;
+}
+.offer .text {
+    text-align: center;
+    top: 50%;
+    left: 15%;
+    width: 200px;
+    color: white;
+    text-shadow: -5px 0 3px rgba(0, 0, 0, 0.219);
+}
+.offer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #ff7f50;
+    z-index: 1;
+}
+.offer:hover::before {
+    width: 50%;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+.offer::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #ff7f50;
+    z-index: 1;
+}
+.offer:hover::after {
+    width: 51%;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+.offer a {
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+    padding: 10px 20px;
+    font-weight: 800;
+}
+.offer:hover a {
+    opacity: 100%;
+    transition-duration: 0.3s;
+    transition-delay: 0.2s;
+}
+.offer a:hover {
+    background-color: white;
+    color: #ff7f50;
+    transition-duration: 0.3s;
+}
+.section-head h2::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: #ff7f50;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+.stars i {
+    color:#e0a000;
+}
+.disabled {
+    color: rgb(206, 206, 206) !important;
+}
+.banner {
+    background-image: url(../imgs/banner/2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 0px;
+}
+.banner .text h2 {
+    width: 400px;
+    letter-spacing: 2px;
+}
+.footer-background{
+    background-color: #222222;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+}
+.column-gap {
+    column-gap: 5px;
+}
+button.btn1 {
+    position: fixed;
+    z-index: 9;
+    right: 15px;
+    top: 50%;
+    transform: scale(2);
+    background-color: #ff7f50;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.181);
+    border: none;
+    border-radius: 2px;
+}
+button.btn1:hover {
+    background-color: #ff6e3a;
+    color: rgba(255, 255, 255, 0.8);
+}
+button.btn1:active{
+    background-color: #ff4400;
+    color: rgba(255, 255, 255, 0.533);
+}
+.card-btn:active {
+    background-color: #ff4400;
+    color: rgb(218, 218, 218);
+    transition-duration: 0.3s;
+}
+.card-btn {
+    position: absolute;
+    z-index: 3;
+    right: 5%;
+    bottom: 5%;
+    transform: scale(1.5);
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.266);
+}
+.cancel:active {
+    background-color: rgb(196, 196, 196);
+}
+.off-bot{
+    z-index: 10;
+}
+.payment {
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 600px;
+}
+#overlay {
+    position: fixed;
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 10; 
+    cursor: pointer;
+}

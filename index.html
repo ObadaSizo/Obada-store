@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Obada Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar position-fixed navbar-expand-lg bg-body-tertiary shadow w-100 bg-white">
+        <div class="container">
+          <a class="navbar-brand fs-4" href="#"><span class="colored">Obada</span> Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2">
+                <a class="nav-link px-2" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link px-2" href="#">Shop</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link px-2" href="#">Blog</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link px-2" href="#">About</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link px-2" href="#">Contact Us</a>
+              </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <button class="btn1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-cart-plus"></i></button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Your Items</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" id="btn-close1"></button>
+  </div>
+  <div class="offcanvas-body position-relative">
+    
+    <div class="off-bot position-fixed bottom-0 bg-white p-3" style="width: calc(400px - 32px);">
+      <div class="row d-flex justify-content-center ">
+        <button class="col-5 btn btn-danger me-3" id="remove">Reset All</button>
+        <button class="col-5 btn btn-primary" id="pay">Payment</button>
+      </div>
+      <hr class="w-80">
+      <p class=" fs-3">Total : <span class="fw-bold" id="theTotal">$0</span></p>
+    </div>
+  </div>
+</div>
+      <div class="hero d-flex align-items-center">
+        <div class="container d-flex justify-content-start align-items-center">
+          <div class="text">
+            <p class="">New ARRAIVALS</p>
+            <h2 class="fw-bold mb-3"><span class="colored fw-bold">Best Price</span> This Year</h2>
+            <p class="mb-4">Shoomatic offers your very comfortable time on walking and exercises</p>
+            <a href="" class="btn-shape">SHOP NOW</a>  
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row py-5">
+          <img class="col-lg-2 col-md-4 col-sm-4" src="./imgs/1.png" alt="">
+          <img class="col-lg-2 col-md-4 col-sm-4" src="./imgs/2.png" alt="">
+          <img class="col-lg-2 col-md-4 col-sm-4" src="./imgs/3.png" alt="">
+          <img class="col-lg-2 col-md-4 col-sm-4" src="./imgs/4.png" alt="">
+          <img class="col-lg-2 col-md-4 col-sm-4" src="./imgs/5.png" alt="">
+          <img class="col-lg-2 col-md-4 col-sm-4" src="./imgs/6.png" alt="">
+        </div>
+      </div>
+      <div class="offers row pb-5 m-0">
+        <div class="offer col-lg-4 col-md-6 col-sm-12 p-0 position-relative">
+          <img class="" src="./imgs/wallpaperflare.com_wallpaper (24).jpg" alt="">
+          <div class="text position-absolute">
+            <p class="fs-3 fw-bold">Extreme Rare Sneakers</p>
+          </div>
+          <a class="" href="">SHOP NOW</a>
+        </div>
+        <div class="offer col-lg-4 col-md-6 col-sm-12 p-0 position-relative">
+          <img class="" src="./imgs/wallpaperflare.com_wallpaper (25).jpg" alt="">
+          <div class="text position-absolute">
+            <p class="fs-3 fw-bold">Awesome Blank Outfit</p>
+          </div>
+          <a class="" href="">SHOP NOW</a>
+        </div>
+        <div class="offer col-lg-4 col-md-6 col-sm-12 p-0 position-relative">
+          <img class="" src="./imgs/wallpaperflare.com_wallpaper (26).jpg" alt="">
+          <div class="text position-absolute">
+            <p class="fs-3 fw-bold">Sportwear Up To 50% Off</p>
+          </div>
+          <a class="" href="">SHOP NOW</a>
+        </div>
+      </div>
+      <section class="features ta-center text-center py-5">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="fw-bold fs-3 py-5 position-relative ">Our Features</h2>
+            <p class="pb-5">Here You Can Find Out Our New Products With Fair Price On Our Store</p>
+          </div>
+          <div class="section-content row d-flex justify-content-between">
+            <div class="card col-lg-3 col-md-6 col-sm-6 mb-4 d-flex" style="width: 18rem;">
+              <img src="./imgs/featured/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="stars d-flex justify-content-center align-items-center pb-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star disabled"></i>
+                </div>
+                <p class="card-text">Sport Boots</p>
+                <span class="fw-bold">$10</span>
+              </div>
+              <button class="card-btn position-absolute"><i class="fas fa-cart-arrow-down"></i></button>
+            </div>
+            <div class="card col-lg-3 col-md-6 col-sm-6 mb-4" style="width: 18rem;">
+              <img src="./imgs/featured/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="stars d-flex justify-content-center align-items-center pb-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star disabled"></i>
+                  <i class="fa-solid fa-star disabled"></i>
+                </div>
+                <p class="card-text">Walking Shoes</p>
+                <span class="fw-bold">$12</span>
+              </div>
+              <button class="card-btn position-absolute"><i class="fas fa-cart-arrow-down"></i></button>
+            </div>
+            <div class="card col-lg-3 col-md-6 col-sm-6 mb-4" style="width: 18rem;">
+              <img src="./imgs/featured/3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="stars d-flex justify-content-center align-items-center pb-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="card-text">School Bag</p>
+                <span class="fw-bold">$15</span>
+              </div>
+              <button class="card-btn position-absolute"><i class="fas fa-cart-arrow-down"></i></button>
+            </div>
+            <div class="card col-lg-3 col-md-6 col-sm-6 mb-4" style="width: 18rem;">
+              <img src="./imgs/featured/4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="stars d-flex justify-content-center align-items-center pb-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star disabled"></i>
+                </div>
+                <p class="card-text">Modern Hat</p>
+                <span class="fw-bold">$5</span>
+              </div>
+              <button class="card-btn position-absolute"><i class="fas fa-cart-arrow-down"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner py-5 my-5">
+        <div class="container">
+          <div class="text py-5">
+            <p class="mb-1 text-white fw-bold">MID SEASON's SALES </p>
+            <h2 class="fw-bold mb-3 text-white fs-1 pb-2">Autumn Collection Up To 20% OFF</h2>
+            <a href="" class="btn-shape" style="background-color: #ff7f50;">SHOP NOW</a>  
+          </div>
+        </div>
+      </section>
+      <section class="features ta-center text-center py-5">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="fw-bold fs-3 py-5 position-relative ">Dresses & Jumpsuite</h2>
+            <p class="pb-5">Here You Can Find Out Our New Products With Fair Price On Our Store</p>
+          </div>
+          <div class="section-content row d-flex justify-content-between">
+            <div class="card col-lg-3 col-md-6 col-sm-6 mb-4 position-relative" style="width: 18rem;">
+              <img src="./imgs/clothes/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="stars d-flex justify-content-center align-items-center pb-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star disabled"></i>
+                </div>
+                <p class="card-text">Formal</p>
+                <span class="fw-bold">$100</span>
+              </div>
+              <button class="card-btn position-absolute"><i class="fas fa-cart-arrow-down"></i></button>
+            </div>
+            <div class="card col-lg-3 col-md-6 col-sm-6 mb-4" style="width: 18rem;">
+              <img src="./imgs/clothes/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="stars d-flex justify-content-center align-items-center pb-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star disabled"></i>
+                  <i class="fa-solid fa-star disabled"></i>
+                </div>
+                <p class="card-text">Dress</p>
+                <span class="fw-bold">$50</span>
+              </div>
+              <button class="card-btn position-absolute"><i class="fas fa-cart-arrow-down"></i></button>
+            </div>
+            <div class="card col-lg-3 col-md-6 col-sm-6 mb-4" style="width: 18rem;">
+              <img src="./imgs/clothes/3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="stars d-flex justify-content-center align-items-center pb-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="card-text">T-shirt</p>
+                <span class="fw-bold">$15</span>
+              </div>
+              <button class="card-btn position-absolute"><i class="fas fa-cart-arrow-down"></i></button>
+            </div>
+            <div class="card col-lg-3 col-md-6 col-sm-6 mb-4" style="width: 18rem;">
+              <img src="./imgs/clothes/4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="stars d-flex justify-content-center align-items-center pb-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star disabled"></i>
+                </div>
+                <p class="card-text">Formal</p>
+                <span class="fw-bold">$100</span>
+              </div>
+              <button class="card-btn position-absolute"><i class="fas fa-cart-arrow-down"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features ta-center text-center py-5">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="fw-bold fs-3 py-5 position-relative ">Running shoes</h2>
+            <p class="pb-5">Here You Can Find Out Our New Products With Fair Price On Our Store</p>
+          </div>
+          <div class="section-content row d-flex justify-content-between">
+            <div class="card col-lg-3 col-md-6 col-sm-6 mb-4" style="width: 18rem;">
+              <img src="./imgs/shoes/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="stars d-flex justify-content-center align-items-center pb-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star disabled"></i>
+                </div>
+                <p class="card-text">Black Sport Shoes</p>
+                <span class="fw-bold">$30</span>
+              </div>
+              <button class="card-btn position-absolute"><i class="fas fa-cart-arrow-down"></i></button>
+            </div>
+            <div class="card col-lg-3 col-md-6 col-sm-6 mb-4" style="width: 18rem;">
+              <img src="./imgs/shoes/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="stars d-flex justify-content-center align-items-center pb-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star disabled"></i>
+                  <i class="fa-solid fa-star disabled"></i>
+                </div>
+                <p class="card-text">Walking Shoes</p>
+                <span class="fw-bold">$40</span>
+              </div>
+              <button class="card-btn position-absolute"><i class="fas fa-cart-arrow-down"></i></button>
+            </div>
+            <div class="card col-lg-3 col-md-6 col-sm-6 mb-4" style="width: 18rem;">
+              <img src="./imgs/shoes/3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="stars d-flex justify-content-center align-items-center pb-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="card-text">Red Sport Shoes</p>
+                <span class="fw-bold">$30</span>
+              </div>
+              <button class="card-btn position-absolute"><i class="fas fa-cart-arrow-down"></i></button>
+            </div>
+            <div class="card col-lg-3 col-md-6 col-sm-6 mb-4" style="width: 18rem;">
+              <img src="./imgs/shoes/4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="stars d-flex justify-content-center align-items-center pb-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star disabled"></i>
+                </div>
+                <p class="card-text">Chip Sport Shoes</p>
+                <span class="fw-bold">$15</span>
+              </div>
+              <button class="card-btn position-absolute"><i class="fas fa-cart-arrow-down"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features ta-center text-center py-5">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="fw-bold fs-3 py-5 position-relative " >Best Watches</h2>
+            <p class="pb-5">Here You Can Find Out Our New Products With Fair Price On Our Store</p>
+          </div>
+          <div class="section-content row d-flex justify-content-between">
+            <div class="card col-lg-3 col-md-6 col-sm-6 mb-4" style="width: 18rem;">
+              <img src="./imgs/watches/1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="stars d-flex justify-content-center align-items-center pb-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star disabled"></i>
+                </div>
+                <p class="card-text">Sport Watch</p>
+                <span class="fw-bold">$30</span>
+              </div>
+              <button class="card-btn position-absolute"><i class="fas fa-cart-arrow-down"></i></button>
+            </div>
+            <div class="card col-lg-3 col-md-6 col-sm-6 mb-4" style="width: 18rem;">
+              <img src="./imgs/watches/2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="stars d-flex justify-content-center align-items-center pb-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star disabled"></i>
+                  <i class="fa-solid fa-star disabled"></i>
+                </div>
+                <p class="card-text">Classic Watch</p>
+                <span class="fw-bold">$40</span>
+              </div>
+              <button class="card-btn position-absolute"><i class="fas fa-cart-arrow-down"></i></button>
+            </div>
+            <div class="card col-lg-3 col-md-6 col-sm-6 mb-4" style="width: 18rem;">
+              <img src="./imgs/watches/3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="stars d-flex justify-content-center align-items-center pb-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="card-text">Brand Watch</p>
+                <span class="fw-bold">$30</span>
+              </div>
+              <button class="card-btn position-absolute"><i class="fas fa-cart-arrow-down"></i></button>
+            </div>
+            <div class="card col-lg-3 col-md-6 col-sm-6 mb-4" style="width: 18rem;">
+              <img src="./imgs/watches/4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <div class="stars d-flex justify-content-center align-items-center pb-4">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star disabled"></i>
+                </div>
+                <p class="card-text">Chip Sport Shoes</p>
+                <span class="fw-bold">$15</span>
+              </div>
+              <button class="card-btn position-absolute"><i class="fas fa-cart-arrow-down"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="footer-background">
+        <div class="container">
+          <footer class=" py-5 mt-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 pb-5">
+              
+              <div class="col-lg-4 col-md-4 col-sm-3 mb-3 me-4">
+            <h2 class="text-white fw-bold pb-2"><span class="colored fw-bold">Obada</span> Store</h2>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aut eius, in nemo perferendis, omnis alias officia rem corrupti ipsam magni eum. Expedita sint nisi corrupti, deleniti tempore laboriosam tempora!</p>
+          </div>
+          
+          
+          <div class="col mb-3">
+            <h5 class="text-white pb-4">Featured</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">MEN</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">WOMEN</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">BOYS</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">GIRLS</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">NEW ARRIVALS</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">SHOES</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">CLOTHES</a></li>
+            </ul>
+          </div>
+          
+          <div class="col mb-3">
+            <h5 class="text-white pb-4">Contact Us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2 text-white">ADDRESS<a href="#" class="nav-link p-1 text-muted">123 Alhamraa Damas, SY</a></li>
+              <li class="nav-item mb-2 text-white">PHONE<a href="#" class="nav-link p-1 text-muted">(+963) 942342342</a></li>
+              <li class="nav-item mb-2 text-white">EMAIL<a href="#" class="nav-link p-1 text-muted">Obada@Store.com</a></li>
+            </ul>
+          </div>
+          <div class="col mb-3">
+            <h5 class="text-white pb-4">Instagram</h5>
+            <div class="row">
+              <img class = "col-lg-4 col-sm-6 mb-4" src="./imgs/insta/1.jpg" alt="">
+              <img class = "col-lg-4 col-sm-6 mb-4" src="./imgs/insta/2.jpg" alt="">
+              <img class = "col-lg-4 col-sm-6 mb-4" src="./imgs/insta/3.jpg" alt="">
+              <img class = "col-lg-4 col-sm-6 mb-4" src="./imgs/insta/4.jpg" alt="">
+              <img class = "col-lg-4 col-sm-6 mb-4" src="./imgs/insta/5.jpg" alt="">
+            </div>
+          </div>
+        </div>
+          <div class="row pt-5">
+            <div class="col-4">
+              <img src="./imgs/payment.png" alt="" class="">
+            </div>
+            <div class="col-5">
+              <p class="text-white">Obada Store eCommerce &copy; 2023 . All Rights Reserved</p>
+            </div>
+            <div class="col-2 d-flex column-gap">
+              <i class="fa-brands fa-facebook-f icons bg-white rounded-circle"></i>
+              <i class="fa-brands fa-twitter icons bg-white rounded-circle"></i>
+              <i class="fa-brands fa-linkedin-in icons bg-white rounded-circle"></i>
+            </div>
+          </div>
+        </footer>
+      </div>
+      </div>
+      <div class="container p-0 position-fixed payment d-none">
+        <div class="card px-4">
+          <button type="button" class="btn-close position-absolute end-0 p-3" id="btn-close2" aria-label="Close"></button>
+            <p class="py-3 fs-3 fw-bold">Payment Details</p>
+            <div class="row gx-3">
+                <div class="col-12">
+                    <div class="d-flex flex-column">
+                        <p class="text mb-1">Person Name</p>
+                        <input class="form-control mb-3" type="text" placeholder="eg : Obada Rod" value="">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-flex flex-column">
+                        <p class="text mb-1">Card Number</p>
+                        <input class="form-control mb-3" type="text" placeholder="eg : 1234 5678 435678">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex flex-column">
+                        <p class="text mb-1">Expiry</p>
+                        <input class="form-control mb-3" type="text" placeholder="MM/YYYY">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex flex-column">
+                        <p class="text mb-1">CVV/CVC</p>
+                        <input class="form-control mb-3 pt-2 " type="password" placeholder="***">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="btn btn-primary mb-3">
+                        <span class="py-2 px-4">Pay <span id="Total-in-form"> $0 </span></span>
+                        <span class="fas fa-arrow-right"></span>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <img src="./imgs/payment.png" alt="">
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay" class="d-none"></div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+      <script src="./js/main.js"></script>
+    </body>
+    </html>
